@@ -1,3 +1,5 @@
+<div class="col-md-10 col-md-offset-1">
+  <div id="formario">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -10,215 +12,16 @@
   <%= @test.email %>
 </p>
 
-<p>
-  <strong>L11:</strong>
-  <%= @test.l11 %>
-</p>
 
-<p>
-  <strong>L12:</strong>
-  <%= @test.l12 %>
-</p>
 
-<p>
-  <strong>L13:</strong>
-  <%= @test.l13 %>
-</p>
 
-<p>
-  <strong>L14:</strong>
-  <%= @test.l14 %>
-</p>
+<%= column_chart({"Innovación" => @test.l1total,"Liderazgo" => @test.l2total,"Flexibilidad" => @test.l3total,"Tolerancia a la Frustración" => @test.l4total,"Trabajo en Equipo" => @test.l5total,"Capacidad de Aprendizaje" => @test.l6total,"Comunicación" => @test.l7total,"Cambio" => @test.l8total,}) %>
 
-<p>
-  <strong>L1total:</strong>
-  <%= @test.l1total %>
-</p>
+<%= link_to 'Edit', edit_test_path(@test) %>
 
-<p>
-  <strong>L21:</strong>
-  <%= @test.l21 %>
-</p>
 
-<p>
-  <strong>L22:</strong>
-  <%= @test.l22 %>
-</p>
+<%= javascript_include_tag "https://www.google.com/jsapi" %>
+  </div>
+</div>
 
-<p>
-  <strong>L23:</strong>
-  <%= @test.l23 %>
-</p>
 
-<p>
-  <strong>L24:</strong>
-  <%= @test.l24 %>
-</p>
-
-<p>
-  <strong>L25:</strong>
-  <%= @test.l25 %>
-</p>
-
-<p>
-  <strong>L26:</strong>
-  <%= @test.l26 %>
-</p>
-
-<p>
-  <strong>L2total:</strong>
-  <%= @test.l2total %>
-</p>
-
-<p>
-  <strong>l31:</strong>
-  <%= @test.l31 %>
-</p>
-
-<p>
-  <strong>l32:</strong>
-  <%= @test.l32 %>
-</p>
-
-<p>
-  <strong>L33:</strong>
-  <%= @test.l33 %>
-</p>
-
-<p>
-  <strong>L34:</strong>
-  <%= @test.l34 %>
-</p>
-
-<p>
-  <strong>L3total:</strong>
-  <%= @test.l3total %>
-</p>
-
-<p>
-  <strong>L41:</strong>
-  <%= @test.l41 %>
-</p>
-
-<p>
-  <strong>L42:</strong>
-  <%= @test.l42 %>
-</p>
-
-<p>
-  <strong>L43:</strong>
-  <%= @test.l43 %>
-</p>
-
-<p>
-  <strong>L44:</strong>
-  <%= @test.l44 %>
-</p>
-
-<p>
-  <strong>L4total:</strong>
-  <%= @test.l4total %>
-</p>
-
-<p>
-  <strong>L51:</strong>
-  <%= @test.l51 %>
-</p>
-
-<p>
-  <strong>L52:</strong>
-  <%= @test.l52 %>
-</p>
-
-<p>
-  <strong>L53:</strong>
-  <%= @test.l53 %>
-</p>
-
-<p>
-  <strong>L54:</strong>
-  <%= @test.l54 %>
-</p>
-
-<p>
-  <strong>L55:</strong>
-  <%= @test.l55 %>
-</p>
-
-<p>
-  <strong>L5total:</strong>
-  <%= @test.l5total %>
-</p>
-
-<p>
-  <strong>L61:</strong>
-  <%= @test.l61 %>
-</p>
-
-<p>
-  <strong>L62:</strong>
-  <%= @test.l62 %>
-</p>
-
-<p>
-  <strong>L63:</strong>
-  <%= @test.l63 %>
-</p>
-
-<p>
-  <strong>L64:</strong>
-  <%= @test.l64 %>
-</p>
-
-<p>
-  <strong>L6total:</strong>
-  <%= @test.l6total %>
-</p>
-
-<p>
-  <strong>L71:</strong>
-  <%= @test.l71 %>
-</p>
-
-<p>
-  <strong>L72:</strong>
-  <%= @test.l72 %>
-</p>
-
-<p>
-  <strong>L73:</strong>
-  <%= @test.l73 %>
-</p>
-
-<p>
-  <strong>L74:</strong>
-  <%= @test.l74 %>
-</p>
-
-<p>
-  <strong>L7total:</strong>
-  <%= @test.l7total %>
-</p>
-
-<p>
-  <strong>L81:</strong>
-  <%= @test.l81 %>
-</p>
-
-<p>
-  <strong>L82:</strong>
-  <%= @test.l82 %>
-</p>
-
-<p>
-  <strong>L83:</strong>
-  <%= @test.l83 %>
-</p>
-
-<p>
-  <strong>L8total:</strong>
-  <%= @test.l8total %>
-</p>
-
-<%= link_to 'Edit', edit_test_path(@test) %> |
-<%= link_to 'Back', tests_path %>
