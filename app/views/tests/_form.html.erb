@@ -1,0 +1,169 @@
+<%= form_for(@test) do |f| %>
+  <% if @test.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@test.errors.count, "error") %> prohibited this test from being saved:</h2>
+
+      <ul>
+      <% @test.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :l11 %><br>
+    <%= f.select :l11, [["Completamente de acuerdo", 1], ["De acuerdo", 2], ["Ni en acuerdo ni en desacuerdo", 3], ["En desacuerdo", 3]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l12 %><br>
+    <%= f.select :l12, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 3], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l13 %><br>
+    <%= f.select :l13, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l14 %><br>
+    <%= f.select :l14, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 3], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="field">
+    <%= f.label :l21 %><br>
+    <%= f.select :l21, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l22 %><br>
+    <%= f.select :l22, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l23 %><br>
+    <%= f.select :l23, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l24 %><br>
+    <%= f.select :l24, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l25 %><br>
+    <%= f.select :l25, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l26 %><br>
+    <%= f.select :l26, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="field">
+    <%= f.label :l31 %><br>
+    <%= f.select :l31, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l32 %><br>
+    <%= f.select :l32, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l33 %><br>
+    <%= f.select :l33, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l34 %><br>
+    <%= f.select :l34, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="field">
+    <%= f.label :l41 %><br>
+    <%= f.select :l41, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l42 %><br>
+    <%= f.select :l42, [["Completamente de acuerdo", 1], ["De acuerdo", 2], ["Ni en acuerdo ni en desacuerdo", 3], ["En desacuerdo", 4]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l43 %><br>
+    <%= f.select :l43, [["Completamente de acuerdo", 1], ["De acuerdo", 2], ["Ni en acuerdo ni en desacuerdo", 3], ["En desacuerdo", 4]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l44 %><br>
+    <%= f.select :l44, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="field">
+    <%= f.label :l51 %><br>
+    <%= f.select :l51, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l52 %><br>
+    <%= f.select :l52, [["Completamente de acuerdo", 1], ["De acuerdo", 2], ["Ni en acuerdo ni en desacuerdo", 3], ["En desacuerdo", 4]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l53 %><br>
+    <%= f.select :l53, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l54 %><br>
+    <%= f.select :l54, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l55 %><br>
+    <%= f.select :l55, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="field">
+    <%= f.label :l61 %><br>
+    <%= f.select :l61, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l62 %><br>
+    <%= f.select :l62, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l63 %><br>
+    <%= f.select :l63, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l64 %><br>
+    <%= f.select :l64, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="field">
+    <%= f.label :l71 %><br>
+    <%= f.select :l71, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l72 %><br>
+    <%= f.select :l72, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l73 %><br>
+    <%= f.select :l73, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l74 %><br>
+    <%= f.select :l74, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="field">
+    <%= f.label :l81 %><br>
+    <%= f.select :l81, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l82 %><br>
+    <%= f.select :l82, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+  <div class="field">
+    <%= f.label :l83 %><br>
+    <%= f.select :l83, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

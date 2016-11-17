@@ -1,0 +1,2 @@
+json.extract! test, :id, :nombre, :email, :l11, :l12, :l13, :l14, :l1total, :l21, :l22, :l23, :l24, :l25, :l26, :l2total, :31, :32, :l33, :l34, :l3total, :l41, :l42, :l43, :l44, :l4total, :l51, :l52, :l53, :l54, :l55, :l5total, :l61, :l62, :l63, :l64, :l6total, :l71, :l72, :l73, :l74, :l7total, :l81, :l82, :l83, :l8total, :created_at, :updated_at
+json.url test_url(test, format: :json)
