@@ -2,53 +2,27 @@
 
 <h1>Listing Tests</h1>
 
-<table>
+<div class="content table-responsive table-full-width">
+        <table class="table table-hover table-striped">
   <thead>
     <tr>
       <th>Nombre</th>
       <th>Email</th>
-      <th>L11</th>
-      <th>L12</th>
-      <th>L13</th>
-      <th>L14</th>
-      <th>L1total</th>
-      <th>L21</th>
-      <th>L22</th>
-      <th>L23</th>
-      <th>L24</th>
-      <th>L25</th>
-      <th>L26</th>
-      <th>L2total</th>
-      <th>L31</th>
-      <th>L32</th>
-      <th>L33</th>
-      <th>L34</th>
-      <th>L3total</th>
-      <th>L41</th>
-      <th>L42</th>
-      <th>L43</th>
-      <th>L44</th>
-      <th>L4total</th>
-      <th>L51</th>
-      <th>L52</th>
-      <th>L53</th>
-      <th>L54</th>
-      <th>L55</th>
-      <th>L5total</th>
-      <th>L61</th>
-      <th>L62</th>
-      <th>L63</th>
-      <th>L64</th>
-      <th>L6total</th>
-      <th>L71</th>
-      <th>L72</th>
-      <th>L73</th>
-      <th>L74</th>
-      <th>L7total</th>
-      <th>L81</th>
-      <th>L82</th>
-      <th>L83</th>
-      <th>L8total</th>
+
+      <th>Pensamiento Lateral</th>
+
+      <th>Liderazgo</th>
+
+      <th>Flexibilidad</th>
+
+      <th>Tolerancia a la Frustración</th>
+
+      <th>Trabajo en Equipo</th>
+
+      <th>Capacidad de Aprendizaje</th>
+
+      <th>Comunicación</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -58,56 +32,31 @@
       <tr>
         <td><%= test.nombre %></td>
         <td><%= test.email %></td>
-        <td><%= test.l11 %></td>
-        <td><%= test.l12 %></td>
-        <td><%= test.l13 %></td>
-        <td><%= test.l14 %></td>
+
         <td><%= test.l1total %></td>
-        <td><%= test.l21 %></td>
-        <td><%= test.l22 %></td>
-        <td><%= test.l23 %></td>
-        <td><%= test.l24 %></td>
-        <td><%= test.l25 %></td>
-        <td><%= test.l26 %></td>
+
         <td><%= test.l2total %></td>
-        <td><%= test.l31 %></td>
-        <td><%= test.l32 %></td>
-        <td><%= test.l33 %></td>
-        <td><%= test.l34 %></td>
+
         <td><%= test.l3total %></td>
-        <td><%= test.l41 %></td>
-        <td><%= test.l42 %></td>
-        <td><%= test.l43 %></td>
-        <td><%= test.l44 %></td>
+
         <td><%= test.l4total %></td>
-        <td><%= test.l51 %></td>
-        <td><%= test.l52 %></td>
-        <td><%= test.l53 %></td>
-        <td><%= test.l54 %></td>
-        <td><%= test.l55 %></td>
+
         <td><%= test.l5total %></td>
-        <td><%= test.l61 %></td>
-        <td><%= test.l62 %></td>
-        <td><%= test.l63 %></td>
-        <td><%= test.l64 %></td>
+
         <td><%= test.l6total %></td>
-        <td><%= test.l71 %></td>
-        <td><%= test.l72 %></td>
-        <td><%= test.l73 %></td>
-        <td><%= test.l74 %></td>
+
         <td><%= test.l7total %></td>
-        <td><%= test.l81 %></td>
-        <td><%= test.l82 %></td>
-        <td><%= test.l83 %></td>
-        <td><%= test.l8total %></td>
-        <td><%= link_to 'Show', test %></td>
-        <td><%= link_to 'Edit', edit_test_path(test) %></td>
-        <td><%= link_to 'Destroy', test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+        <td><%= link_to 'Ver', test %></td>
+        <td><%= link_to 'Editar', edit_test_path(test) %></td>
+        <td><%= link_to 'Eliminar', test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
 
-<%= link_to 'New Test', new_test_path %>
+<%= link_to 'Nuevo Test', new_test_path %>

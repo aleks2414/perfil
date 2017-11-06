@@ -28,9 +28,21 @@
   </div>
   </div>
 <h3>Instrucciones</h3>
-<p>Lee con atención cada situación que se presenta y escoje la respuesta que mejor refleje
+<p>Lee con atención cada situación que se presenta y escoge la respuesta que mejor refleje tu actuación habitual.
+</p>
+<p>
+Una vez que completes <strong>todas</strong> las competencias que aparecen (pensamiento lateral, liderazgo, flexibilidad, tolerancia a la frustración, trabajo en equipo, capacidad de aprendizaje, comunicación, cambio) da click en el botón <strong>"Obtener resultados".</strong>
+</p>
 
-tu actuación habitual.</p>
+<p>
+Los resultados sólo se desplegarán si completaste <strong>todo </strong> el test.
+</p>
+
+<p>
+Este test está en versión <strong>BETA</strong>, así que cualquier duda o comentario que tengas compártela al correo:</p>
+<%= link_to "mailto:contacto@idearialab.com?Subject=Comentario%20del%20Test" do %>
+<p>contacto@idearialab.com</p>
+<%end %>
 
 
   
@@ -42,7 +54,6 @@ tu actuación habitual.</p>
     <li><a data-toggle="tab" href="#menu4">Trabajo en Equipo</a></li>
     <li><a data-toggle="tab" href="#menu5">Capacidad de aprendizaje</a></li>
     <li><a data-toggle="tab" href="#menu6">Comunicación</a></li>
-    <li><a data-toggle="tab" href="#menu7">Cambio</a></li>
   </ul>
 
 
@@ -393,42 +404,6 @@ tu actuación habitual.</p>
       </div>
       <div class="col-md-6">
         <%= f.select :l74, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
-      </div>
-    </div>
-  </li>
-</ul>
-<!--  -->
-    </div>
-    <div id="menu7" class="tab-pane fade">
-<!--  -->
-<ul>
-  <li>
-    <div class="row">
-      <div class="col-md-6">
-        <p>Te mantienes en estado Beta abierto a cambios en tu forma de trabajar</p>
-      </div>
-      <div class="col-md-6">
-        <%= f.select :l81, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="row">
-      <div class="col-md-6">
-        <p>Disfrutas implementar novedades en tu trabajo</p>
-      </div>
-      <div class="col-md-6">
-        <%= f.select :l82, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="row">
-      <div class="col-md-6">
-        <p>Te arriesgas a probar nuevas maneras de desarrollar tu trabajo</p>
-      </div>
-      <div class="col-md-6">
-        <%= f.select :l83, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
       </div>
     </div>
   </li>
