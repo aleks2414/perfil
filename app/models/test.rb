@@ -28,11 +28,6 @@ class Test < ActiveRecord::Base
 
   self.l7total = self.l71+self.l72+self.l73+self.l74
   self.l7total = self.l7total.round(2)
-
-
-  self.l8total = self.l81+self.l82+self.l83
-  self.l8total = self.l8total.round(2)
-
   end
 
 end
