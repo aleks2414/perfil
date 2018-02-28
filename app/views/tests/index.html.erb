@@ -49,7 +49,7 @@
 
         <td><%= test.l7total %></td>
 
-        <td><%= test.created_at%></td>
+        <td><%= test.created_at.strftime(" %b-%d-%Y")%></td>
 
 
         <td><%= link_to 'Ver', test %></td>
