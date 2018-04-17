@@ -1,0 +1,37 @@
+<h4>Flexibilidad</h4>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Respondes de manera inmediata y serena a imprevistos, aún cuando estés atendiendo una tarea que te interesa mucho</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l31, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Has rolado por diferentes áreas de la organización</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l32, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Has realizado tareas de otra área o especialidad diferente a la tuya</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l33, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Cambias tu forma habitual de trabajar cuando recibes nuevos requerimientos de clientes, proveedores, instituciones, etc.</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l34, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}, {:required => true}%>
+  </div>
+</div>

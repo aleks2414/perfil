@@ -12,30 +12,40 @@ class TestsController < ApplicationController
   def show
   end
 
-  # GET /tests/new
-  def new
-    @test = Test.new
-  end
-
   # GET /tests/1/edit
   def edit
   end
 
   # POST /tests
   # POST /tests.json
-  def create
-    @test = Test.new(test_params)
+def new
+  session[:test_params] ||= {}
+  @test = Test.new(session[:test_params])
+  @test.current_step = session[:test_step]
+end
 
-    respond_to do |format|
-      if @test.save
-        format.html { redirect_to @test, notice: 'Test was successfully created.' }
-        format.json { render :show, status: :created, location: @test }
-      else
-        format.html { render :new }
-        format.json { render json: @test.errors, status: :unprocessable_entity }
-      end
+def create
+  session[:test_params].deep_merge!(params[:test]) if params[:test]
+  @test = Test.new(session[:test_params])
+  @test.current_step = session[:test_step]
+  if @test.valid?
+    if params[:back_button]
+      @test.previous_step
+    elsif @test.last_step?
+      @test.save if @test.all_valid?
+    else
+      @test.next_step
     end
+    session[:test_step] = @test.current_step
   end
+  if @test.new_record?
+    render "new"
+  else
+    session[:test_step] = session[:test_params] = nil
+    flash[:notice] = "test saved!"
+    redirect_to @test
+  end
+end
 
   # PATCH/PUT /tests/1
   # PATCH/PUT /tests/1.json

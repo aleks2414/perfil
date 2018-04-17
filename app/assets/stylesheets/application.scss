@@ -22,28 +22,32 @@
 	background-color: #efefef;
 	border: solid 2px #e3e3e3;
 	padding: 3rem;
-	ul {
 
-		list-style: none;
-		padding: 0;
-		margin: 8rem 0;
-	}
-	li {
-		margin: 2rem 0;
-	}
+  ul {
+    list-style: none;
+  }
+
 }
+
+h2 {
+  margin: 25px 0;
+}
+
+  h4 {
+    margin: 30px 0;
+  }
 
 .btn {
 	transition: background-color .25s linear;
   font-size: 14px;
   min-width: 250px;
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 11px;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 6rem 2rem;
   background-color: transparent;
 }
 
@@ -56,6 +60,17 @@
   }
 }
 
+.button_blue2 {
+  color: white;
+  border: solid 2.5px #00aeff;
+  background-color: #00aeff;
+  &:hover {
+    color: white;
+    background-color: #02567d;
+    border: solid #02567d;
+  }
+}
+
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #555555;
@@ -64,3 +79,23 @@
     border-bottom: 2px solid #00aeff;
     cursor: default;
 }
+
+#error_explanation{
+  width: 100% !important;
+  border-color: #00a1ff !important;  
+}
+
+.field_with_errors {
+margin: 0 auto;
+background-color: #00a1ff;
+}
+
+input[type="date"],input[type="name"], input[type="email"], input[type="textbox"], input[type="number"], input[type="tel"], input[type="text"], input[type="password"], textarea, select {
+  width: 100%;
+  height: 30px;
+  border:none;
+  border:1.3px solid #dadada;
+  margin-bottom: 10px;
+  background-color: white !important;
+  padding-left: 10px;
+  }

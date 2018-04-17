@@ -1,0 +1,37 @@
+<h4>Pensamiento Lateral</h4>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Consideras acertada la frase “si no está roto no lo arregles”</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l11, [["Completamente de acuerdo", 1], ["De acuerdo", 2], ["Ni en acuerdo ni en desacuerdo", 3], ["En desacuerdo", 3]], {:prompt => 'Selecciona una opción'}%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Cuando ves un problema lo señalas al responsable</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l12, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Cuando ves un problema que no se resuelve lo escalas</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l13, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <p>Cuando se te ocurre una idea para un área que no es la tuya la presentas</p>
+  </div>
+  <div class="col-md-6">
+    <%= f.select :l14, [["Completamente de acuerdo", 4], ["De acuerdo", 3], ["Ni en acuerdo ni en desacuerdo", 2], ["En desacuerdo", 1]], {:prompt => 'Selecciona una opción'}%>
+  </div>
+</div>

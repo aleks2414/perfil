@@ -62,5 +62,18 @@
 </div>
 
 <br>
+<br><br>
+<p>
+Promedio del grupo
+</p>
 
-<%= link_to 'Nuevo Test', new_test_path %>
+
+
+
+<%= column_chart({"Pensamiento Lateral" => @tests.average(:l1total),"Liderazgo" => @tests.average(:l2total),"Flexibilidad" => @tests.average(:l3total),"Tolerancia a la Frustración" => @tests.average(:l4total),"Trabajo en Equipo" => @tests.average(:l5total),"Capacidad de Aprendizaje" => @tests.average(:l6total),"Comunicación" => @tests.average(:l7total)}) %>
+
+<%= javascript_include_tag "https://www.google.com/jsapi" %>
+
+
+
+<%= link_to 'Nuevo Test', new_test_path, class: "btn button_blue" %>
